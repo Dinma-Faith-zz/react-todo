@@ -3,11 +3,11 @@
 /* eslint-disable react/state-in-constructor */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class InputTodo extends Component {
   state = {
-    fName: '',
-    lastName: '',
+    title: '',
   };
 
   onChange = (e) => {
@@ -40,9 +40,14 @@ class InputTodo extends Component {
           name="title"
           onChange={this.onChange}
         />
-        <button className="input-submit">Submit</button>
+        <button className="input-submit" type="submit">Submit</button>
       </form>
     );
   }
 }
+
+InputTodo.propTypes = {
+  addTodoProps: PropTypes.func.isRequired,
+};
+
 export default InputTodo;

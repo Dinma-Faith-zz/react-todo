@@ -3,12 +3,17 @@
 /* eslint-disable react/state-in-constructor */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './TodoItem.module.css';
 
 class TodoItem extends React.Component {
   state = {
     editing: false,
   };
+
+  componentWillUnmount() {
+    console.log('Cleaning up...');
+  }
 
   handleEditing = () => {
     this.setState({
@@ -21,10 +26,6 @@ class TodoItem extends React.Component {
       this.setState({ editing: false });
     }
   };
-
-  componentWillUnmount() {
-    console.log('Cleaning up...');
-  }
 
   render() {
     const completedStyle = {
@@ -54,7 +55,7 @@ class TodoItem extends React.Component {
             checked={completed}
             onChange={() => this.props.handleChangeProps(id)}
           />
-          <button onClick={() => this.props.deleteTodoProps(id)}>Delete</button>
+          <button onClick={() => this.props.deleteTodoProps(id)} type="button">Delete</button>
           <span style={completed ? completedStyle : null}>{title}</span>
         </div>
         <input
@@ -72,5 +73,16 @@ class TodoItem extends React.Component {
     );
   }
 }
+
+TodoItem.propTypes = {
+  todo: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    completed: PropTypes.bool,
+  }).isRequired,
+  setUpdate: PropTypes.func.isRequired,
+  handleChangeProps: PropTypes.func.isRequired,
+  deleteTodoProps: PropTypes.func.isRequired,
+};
 
 export default TodoItem;

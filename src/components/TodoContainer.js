@@ -12,6 +12,16 @@ class TodoContainer extends React.Component {
     todos: [],
   };
 
+  componentDidMount() {
+    const temp = localStorage.getItem('todos');
+    const loadedTodos = JSON.parse(temp);
+    if (loadedTodos) {
+      this.setState({
+        todos: loadedTodos,
+      });
+    }
+  }
+
   componentDidUpdate(prevProps, prevState) {
     if (prevState.todos !== this.state.todos) {
       const temp = JSON.stringify(this.state.todos);
@@ -57,23 +67,14 @@ class TodoContainer extends React.Component {
   setUpdate = (updatedTitle, id) => {
     this.setState({
       todos: this.state.todos.map((todo) => {
-        if (todo.id === id) {
-          todo.title = updatedTitle;
+        const td = todo;
+        if (td.id === id) {
+          td.title = updatedTitle;
         }
-        return todo;
+        return td;
       }),
     });
   };
-
-  componentDidMount() {
-    const temp = localStorage.getItem('todos');
-    const loadedTodos = JSON.parse(temp);
-    if (loadedTodos) {
-      this.setState({
-        todos: loadedTodos,
-      });
-    }
-  }
 
   render() {
     return (
