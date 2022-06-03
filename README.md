@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React todo App
 
-## Available Scripts
+> This is a todo application that enables users to manage their daily tasks
 
-In the project directory, you can run:
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- HTML and 
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Live Demo (if available)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link]
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- To get a local copy up and running follow these simple example steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Setup
+- git clone https://github.com/Dinma-Faith/react-todo.git
 
-### `npm run eject`
+# Usage
+-  Usage: cd <https://github.com/Dinma-Faith/react-todo.git>, npm install, npm start.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get a local copy up and running follow these simple example steps.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Have a working and updated browser
+- Have a local version control like **git** install on your computer
+- Have knowledge about figma to adapt the design by following some specific requirements
+- Have an account and sign in on GitHub, as  online/remote version control system
+- Download waves to check project accessibilty
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Setup
 
-## Learn More
+-Clone the git repo using this command: **git clone git@github.com:Dinma-Faith/react-todo.git**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits    for performance, accessibility, progressive web apps, SEO and more).
 
-### Code Splitting
+- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 
-### Analyzing the Bundle Size
+- ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Create React App
 
-### Making a Progressive Web App
+- npx create-react-app my-app
+- cd my-app
+- npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Usage
 
-### Advanced Configuration
+-  Usage: cd <https://github.com/Dinma-Faith/react-todo.git>, npm install, npm start.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Run tests
+
+- **npx hint .** : To test html codes
+- **npx stylelint "**/\*.{css,scss}"\*\* : To test css code
+- **npx eslint .** : To test Eslint Report
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Go to settings
+- Click on pages
+- Choose your source
+- Choose folder
+- choose a theme(optional)
+- Enforce HTTPS
+- And then save.
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Authors
+
+👤 **Author1**
+
+- GitHub: [@githubhandle](https://github.com/Dinma-Faith)
+- Twitter: [@twitterhandle](https://twitter.com/phayte_p)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+The design has been inspired by:
+
+  [Microverse](https://www.microverse.org)
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
